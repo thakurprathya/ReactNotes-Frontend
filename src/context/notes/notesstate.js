@@ -2,8 +2,8 @@ import { useState } from "react";
 import NoteContext from "./notescontext";
 
 const NoteState= (props)=>{
-    const host="http://localhost:4000";  //defining backend host
-    // const host="https://react-notes-backend.onrender.com";  //defining backend host after deployment needs to be updated
+    // const host="http://localhost:4000";  //defining backend host
+    const host="https://notesapp-backend-mm5r.onrender.com";  //defining backend host after deployment needs to be updated
     const [notes, setNotes]= useState([]);
 
     //Get all notes

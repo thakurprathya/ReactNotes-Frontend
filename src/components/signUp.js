@@ -9,8 +9,8 @@ const SignUp = (props) => {
           e.preventDefault();
           const {username, name, email, password} = credentials; //destructuring 
           //API call
-          const url=`http://localhost:4000/auth/createuser`;
-          // const url=`https://react-notes-backend.onrender.com/auth/createuser`;  //for deployment
+        //   const url=`http://localhost:4000/auth/createuser`;
+          const url=`https://notesapp-backend-mm5r.onrender.com/auth/createuser`;  //for deployment
           if(credentials.cpassword !== credentials.password){
               props.showAlert("Passwords not Matched, Retry!!","warning");
           }

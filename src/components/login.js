@@ -8,8 +8,8 @@ const Login = (props) => {
     const HandleSubmit= async (e)=>{  //submit button click function
         e.preventDefault();
         //API call
-        const url=`http://localhost:4000/auth/login`;
-        // const url=`https://react-notes-backend.onrender.com/auth/login`;  //for deployment
+        // const url=`http://localhost:4000/auth/login`;
+        const url=`https://notesapp-backend-mm5r.onrender.com/auth/login`;  //for deployment
         const response = await fetch(url, {
             method: 'POST',
             headers: {
