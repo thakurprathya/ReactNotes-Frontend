@@ -12,7 +12,7 @@ const Navbar = () => {
     const HandleLogout= ()=>{
         localStorage.removeItem("token");
         navigate("/login");  //redirecting to login page
-        window.location.reload();  //reloading page for refreshing components
+        // window.location.reload();  //reloading page for refreshing components
     }
 
     return (
